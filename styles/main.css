@@ -388,25 +388,60 @@ template {
   src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("ttf");
 }
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: url("../img/view.jpg");
   font-family: Roboto;
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+}
+.header__image {
+  margin-right: 82px;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 30px auto 0;
   max-width: 1200px;
 }
 
-.section {
-  margin-bottom: 40px;
+.nav__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 4px;
 }
-.section--no-margin {
-  margin-bottom: 0;
+.nav__item {
+  color: #B8B8B8;
+  list-style-type: none;
+}
+.nav__item:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
-.footer {
-  margin-top: auto;
+.languages-switch {
+  margin: 4px 52px 0;
+}
+.languages-switch .language-switch-ukr {
+  color: #fff;
+  text-decoration: none;
+}
+.languages-switch-en {
+  color: #B8B8B8;
+  text-decoration: none;
+}
+.languages-switch-en:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.login {
+  margin-top: 4px;
+}
+.login-link {
+  border: 1px solid white;
+  color: #fff;
+  text-decoration: none;
+  padding: 9px 20px 10px;
 }
